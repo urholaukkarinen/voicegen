@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "voicegen"
+version = "0.1.0"
+description = ""
+
+[tool.poetry.dependencies]
+python = "^3.7"
+toml = "^0.10.2"
+gTTS = "^2.2.2"
+ffmpeg-python = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+voicegen = "voicegen.cli:cli"

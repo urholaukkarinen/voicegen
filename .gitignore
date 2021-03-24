@@ -1,0 +1,4 @@
+custom_fi.toml
+*.sqfs
+__pycache__/
+squashfs-root/
