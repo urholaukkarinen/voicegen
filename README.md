@@ -29,7 +29,7 @@ S5 Max:
 PC:
 * `scp root@robot_ip:/tmp/sounds.sqfs sounds.sqfs`
 * `unsquashfs sounds.sqfs`
-* `poetry run voicegen -c texts_en.toml -o squashfs-root/sounds`
+* `python src/voicegen -c texts_en.toml -o squashfs-root/sounds`
 * `mksquashfs squashfs-root new_sounds.sqfs`
 * `scp new_sounds.sqfs root@robot_ip:/tmp/sounds.sqfs`
 
